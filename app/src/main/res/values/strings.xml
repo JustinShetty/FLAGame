@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FLAGame</string>
+    <string name="state1">INACTIVE</string>
+    <string name="switch1Text">click me</string>
+</resources>
