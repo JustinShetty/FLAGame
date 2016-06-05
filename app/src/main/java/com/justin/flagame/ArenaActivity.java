@@ -35,9 +35,9 @@ public class ArenaActivity extends Activity{
     String curCountry;
     String[] options = new String[4];
 
-    HashMap<String, String> countries = new HashMap<String, String>();
+    HashMap<String, String> countries = new HashMap<>();
     String[] fileNames;
-    ArrayList<String> workingList = new ArrayList<String>();
+    ArrayList<String> workingList = new ArrayList<>();
 
     int correctLoc;
 
@@ -58,14 +58,22 @@ public class ArenaActivity extends Activity{
         buttons[2] = (Button) this.findViewById(R.id.choice3);
         buttons[3] = (Button) this.findViewById(R.id.choice4);
         buildMapBuildList();
-        updateVals();
+        update();
     }
 
-    public void updateVals(){
+    public void update(){
         score.setText(String.valueOf(scoreVal));
         lives.setText(String.valueOf(livesVal));
-        buildScene();
-        mainFlag.setImageBitmap(loadFlag(countries.get(curCountry)));
+        if(workingList.size()>=4){
+            buildScene();
+            mainFlag.setImageBitmap(loadFlag(countries.get(curCountry)));
+            ((TextView) findViewById(R.id.ANSWER)).setText(curCountry);
+        }
+        else{
+            Toast.makeText(this,"No more countries",Toast.LENGTH_SHORT).show();
+            Intent goToMenu = new Intent(this,MainActivity.class);
+            startActivity(goToMenu);
+        }
     }
 
     public void buildScene(){
@@ -83,6 +91,9 @@ public class ArenaActivity extends Activity{
 
         for(int i = 0 ; i < options.length ; i++){
             buttons[i].setText(options[i]);
+        }
+        for(String s : workingList){
+            System.out.println(s);
         }
     }
 
@@ -121,12 +132,17 @@ public class ArenaActivity extends Activity{
 
     public void choose(View view) {
         int id = view.getId();
-//        Toast.makeText(this,String.valueOf(view.),Toast.LENGTH_SHORT).show();
         if(id == buttons[correctLoc].getId()){
-            Toast.makeText(this,"right",Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this,"right",Toast.LENGTH_SHORT).show();
+            scoreVal += 100;
+            String countryToRemove = String.valueOf(buttons[correctLoc].getText());
+            workingList.remove(countryToRemove);
+            update();
         }
         else{
-            Toast.makeText(this,"wrong",Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this,"wrong",Toast.LENGTH_SHORT).show();
+            livesVal -= 1;
+            update();
         }
     }
 }

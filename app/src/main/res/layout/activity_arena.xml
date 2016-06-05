@@ -81,5 +81,10 @@
         android:layout_marginRight="32dp"
         android:id="@+id/choice4"
         android:onClick="choose"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ANSWER"
+        android:text="null"/>
 
 </LinearLayout>
