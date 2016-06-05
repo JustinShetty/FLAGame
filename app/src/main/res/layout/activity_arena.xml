@@ -59,24 +59,27 @@
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:id="@+id/choice1"
-        android:onClick="testFunction"/>
+        android:onClick="choose"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
-        android:id="@+id/choice2"/>
+        android:id="@+id/choice2"
+        android:onClick="choose"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
-        android:id="@+id/choice3"/>
+        android:id="@+id/choice3"
+        android:onClick="choose"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
-        android:id="@+id/choice4"/>
+        android:id="@+id/choice4"
+        android:onClick="choose"/>
 
 </LinearLayout>

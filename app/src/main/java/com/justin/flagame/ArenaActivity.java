@@ -6,67 +6,87 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Random;
 
 /**
  * Main gameplay area
  */
 
 public class ArenaActivity extends Activity{
+    Random rand = new Random();
+
     ImageView mainFlag;
     TextView score;
     TextView lives;
-    Button choice1;
-    Button choice2;
-    Button choice3;
-    Button choice4;
-    private int scoreVal = 0;
-    private int livesVal = 3;
+    Button[] buttons = new Button[4];
+    int scoreVal = 0;
+    int livesVal = 3;
+    String curCountry;
+    String[] options = new String[4];
 
     HashMap<String, String> countries = new HashMap<String, String>();
     String[] fileNames;
+    ArrayList<String> workingList = new ArrayList<String>();
+
+    int correctLoc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arena);
-        prepareScene();
-//        Intent getDataFromMain = getIntent();
-//        String data = getDataFromMain.getExtras().getString("time");
-//        TextView tv2 = (TextView) findViewById(R.id.tv2);
-//        tv2.setText(data);
+        getFiles();
+        sceneInit();
     }
 
-    public void prepareScene(){
+    public void sceneInit(){
         mainFlag = (ImageView) this.findViewById(R.id.countryToGuess);
-        mainFlag.setImageBitmap(loadFlag("azerbaijan.svg.png"));
         score = (TextView) this.findViewById(R.id.score);
         lives = (TextView) this.findViewById(R.id.lives);
-        choice1 = (Button) this.findViewById(R.id.choice1);
-        choice2 = (Button) this.findViewById(R.id.choice2);
-        choice3 = (Button) this.findViewById(R.id.choice3);
-        choice4 = (Button) this.findViewById(R.id.choice4);
+        buttons[0] = (Button) this.findViewById(R.id.choice1);
+        buttons[1] = (Button) this.findViewById(R.id.choice2);
+        buttons[2] = (Button) this.findViewById(R.id.choice3);
+        buttons[3] = (Button) this.findViewById(R.id.choice4);
+        buildMapBuildList();
+        updateVals();
     }
 
-    public void UpdateVals(){
+    public void updateVals(){
         score.setText(String.valueOf(scoreVal));
         lives.setText(String.valueOf(livesVal));
+        buildScene();
+        mainFlag.setImageBitmap(loadFlag(countries.get(curCountry)));
     }
 
-    public void getFiles(View view){
+    public void buildScene(){
+        ArrayList<String> temp = new ArrayList<>();
+        for(String s : workingList){
+            temp.add(s);
+        }
+        Collections.shuffle(temp);
+        for(int i = 0 ; i < options.length ; i++){
+            options[i] = temp.get(i);
+        }
+
+        correctLoc = rand.nextInt(4);
+        curCountry = options[correctLoc];
+
+        for(int i = 0 ; i < options.length ; i++){
+            buttons[i].setText(options[i]);
+        }
+    }
+
+    public void getFiles(){
         try{
             fileNames = getAssets().list("flags");
         }
@@ -89,21 +109,24 @@ public class ArenaActivity extends Activity{
     public String countryFromFileName(String fileName){
         String result = fileName.substring(0,1).toUpperCase();
         result += fileName.split("\\.")[0].substring(1);
-        return result;
+        return result.replace("_"," ");
     }
 
-    public void buildHashMap(){
+    public void buildMapBuildList(){
         for(String name : fileNames){
             countries.put(countryFromFileName(name), name);
+            workingList.add(countryFromFileName(name));
         }
     }
 
-//    public void testFunction(View view) {
-//        getFiles(view);
-//        buildHashMap();
-//        for(String country : countries.keySet()) {
-//            System.out.println(country);
-//            System.out.println(countries.get(country));
-//        }
-//    }
+    public void choose(View view) {
+        int id = view.getId();
+//        Toast.makeText(this,String.valueOf(view.),Toast.LENGTH_SHORT).show();
+        if(id == buttons[correctLoc].getId()){
+            Toast.makeText(this,"right",Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(this,"wrong",Toast.LENGTH_SHORT).show();
+        }
+    }
 }

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void buildHero(){
         ImageView hero = (ImageView) findViewById(R.id.hero);
-        hero.setImageBitmap(loadImageFromAssets("flags/germany.gif"));
+        hero.setImageBitmap(loadImageFromAssets("eric2.jpg"));
     }
 
     public Bitmap loadImageFromAssets(String name){
