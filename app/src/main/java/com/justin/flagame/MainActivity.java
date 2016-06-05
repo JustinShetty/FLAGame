@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void buildHero(){
         ImageView hero = (ImageView) findViewById(R.id.hero);
-        hero.setImageBitmap(loadImageFromAssets("eric2.jpg"));
+        hero.setImageBitmap(loadImageFromAssets("un.png"));
     }
 
     public Bitmap loadImageFromAssets(String name){
@@ -44,5 +44,9 @@ public class MainActivity extends AppCompatActivity {
     public void playMethod(View view) {
         Intent goToArena = new Intent(this,ArenaActivity.class);
         startActivity(goToArena);
+    }
+
+    public void quitMethod(View view) {
+        finish();
     }
 }
