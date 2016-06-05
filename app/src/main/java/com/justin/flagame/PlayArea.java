@@ -1,15 +1,12 @@
 package com.justin.flagame;
 
 import android.app.Activity;
-import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.Gravity;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -26,7 +23,7 @@ import java.util.Random;
  * Main gameplay area
  */
 
-public class ArenaActivity extends Activity{
+public class PlayArea extends Activity{
     Random rand = new Random();
 
     ImageView mainFlag;
@@ -163,6 +160,6 @@ public class ArenaActivity extends Activity{
     }
 
     public void goToMenu() {
-        startActivity(new Intent(this,MainActivity.class));
+        startActivity(new Intent(this,Menu.class));
     }
 }

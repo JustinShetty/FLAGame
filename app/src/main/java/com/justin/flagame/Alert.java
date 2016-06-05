@@ -4,14 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.view.Gravity;
 import android.view.MotionEvent;
-import android.view.View;
-import android.view.WindowManager;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 /**
  * Created by Justin on 6/5/2016.
@@ -57,6 +51,6 @@ public class Alert extends Activity {
     }
 
     public void goToMenu() {
-        startActivity(new Intent(this,MainActivity.class));
+        startActivity(new Intent(this,Menu.class));
     }
 }

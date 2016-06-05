@@ -64,14 +64,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/MainActivity.java">
+      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.20833333">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding>
-                <element signature="e#1399#1400#0" expanded="true" />
-                <element signature="e#1423#1424#0" expanded="true" />
+                <element signature="e#1231#1232#0" expanded="true" />
+                <element signature="e#1255#1256#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,7 +87,7 @@
                 <element signature="e#424#459#0" expanded="true" />
                 <element signature="e#485#520#0" expanded="true" />
                 <element signature="e#544#577#0" expanded="true" />
-                <element signature="e#1115#1133#0" expanded="true" />
+                <element signature="e#1089#1107#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,16 +96,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArenaActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/ArenaActivity.java">
+      <file leaf-file-name="PlayArea.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/PlayArea.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="148" column="21" selection-start-line="148" selection-start-column="21" selection-end-line="148" selection-end-column="21" />
+              <caret line="145" column="21" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getFiles#0;class#ArenaActivity#0" expanded="false" />
-                <element signature="e#4690#4691#0" expanded="true" />
-                <element signature="e#4756#4757#0" expanded="true" />
+                <element signature="method#getFiles#0;class#PlayArea#0" expanded="false" />
+                <element signature="e#4593#4594#0" expanded="true" />
+                <element signature="e#4651#4652#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,11 +133,11 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/Alert.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+              <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1609#1610#0" expanded="true" />
-                <element signature="e#1675#1676#0" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
+                <element signature="e#1513#1514#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1780,6 +1780,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/justin/flagame/ArenaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/justin/flagame/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/justin/flagame/Menu.java" />
       </list>
     </option>
   </component>
@@ -2221,7 +2222,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.49573562" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
@@ -2229,7 +2230,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10021322" sideWeight="0.9221748" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10021322" sideWeight="0.9221748" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37420043" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50852877" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
@@ -2310,7 +2311,7 @@
             <element signature="e#424#459#0" expanded="true" />
             <element signature="e#485#520#0" expanded="true" />
             <element signature="e#544#577#0" expanded="true" />
-            <element signature="e#1115#1133#0" expanded="true" />
+            <element signature="e#1089#1107#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2318,13 +2319,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2354,7 +2355,7 @@
             <element signature="e#424#459#0" expanded="true" />
             <element signature="e#485#520#0" expanded="true" />
             <element signature="e#544#577#0" expanded="true" />
-            <element signature="e#1115#1133#0" expanded="true" />
+            <element signature="e#1089#1107#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2362,13 +2363,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding>
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2398,7 +2399,7 @@
             <element signature="e#424#459#0" expanded="true" />
             <element signature="e#485#520#0" expanded="true" />
             <element signature="e#544#577#0" expanded="true" />
-            <element signature="e#1115#1133#0" expanded="true" />
+            <element signature="e#1089#1107#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2538,24 +2539,24 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/Alert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+            <element signature="e#1513#1514#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/ArenaActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/PlayArea.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="148" column="21" selection-start-line="148" selection-start-column="21" selection-end-line="148" selection-end-column="21" />
+          <caret line="145" column="21" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getFiles#0;class#ArenaActivity#0" expanded="false" />
-            <element signature="e#4690#4691#0" expanded="true" />
-            <element signature="e#4756#4757#0" expanded="true" />
+            <element signature="method#getFiles#0;class#PlayArea#0" expanded="false" />
+            <element signature="e#4593#4594#0" expanded="true" />
+            <element signature="e#4651#4652#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2569,7 +2570,7 @@
             <element signature="e#424#459#0" expanded="true" />
             <element signature="e#485#520#0" expanded="true" />
             <element signature="e#544#577#0" expanded="true" />
-            <element signature="e#1115#1133#0" expanded="true" />
+            <element signature="e#1089#1107#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2577,13 +2578,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/justin/flagame/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20833333">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
           </folding>
         </state>
       </provider>

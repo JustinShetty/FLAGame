@@ -7,16 +7,11 @@ import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.Switch;
-import android.widget.TextView;
 
 import java.io.IOException;
-import java.util.Calendar;
 
-public class MainActivity extends AppCompatActivity {
+public class Menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void playMethod(View view) {
-        Intent goToArena = new Intent(this,ArenaActivity.class);
+        Intent goToArena = new Intent(this,PlayArea.class);
         startActivity(goToArena);
     }
 
